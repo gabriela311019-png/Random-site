@@ -78,6 +78,22 @@ const PAGE_CONFIG = {
   },
 };
 
+// lista de imágenes
+const fondos = [
+  "https://i.pinimg.com/736x/42/e7/1d/42e71dce0546684ef4cfec3580442eb8.jpg",
+  "https://i.pinimg.com/736x/cd/cd/3c/cdcd3c1514e27ce542a690d9d7cfe775.jpg",
+  "https://i.pinimg.com/736x/85/c7/f2/85c7f2a3a220f2c43728c5c871240110.jpg",
+  "https://i.pinimg.com/1200x/61/c3/a5/61c3a57e7d48ac2ae86b4e84d7427cdf.jpg",
+];
+
+// elegir una aleatoria
+const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
+
+// ponerla como fondo
+document.body.style.backgroundImage = `url(${fondoAleatorio})`;
+document.body.style.backgroundSize = "cover";
+document.body.style.backgroundPosition = "center";
+document.body.style.backgroundRepeat = "no-repeat";
 
 
 
