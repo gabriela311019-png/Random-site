@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Anywhere</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+  <div class="home-screen" id="home-screen">
+    <div class="grid-bg"></div>
+    <h1 class="home-title">Random site</h1>
+    <p class="home-subtitle">Elige una página y haz clic en cualquier lugar</p>
+    <div class="home-buttons">
+      <a href="#page1" class="home-btn">Comida</a>
+      <a href="#page2" class="home-btn">Animales</a>
+      <a href="#page3" class="home-btn">Objetos</a>
+    </div>
+  </div>
+
+  
+  <div class="canvas" id="canvas" style="display:none;">
+    <div class="grid-bg"></div>
+    <div class="header">
+      <h1 id="title"></h1>
+      <p id="subtitle"></p>
+    </div>
+    <button class="clear-btn" id="clear-btn">Limpiar</button>
+    <div class="hint" id="hint">👆</div>
+    <nav class="page-nav">
+      <a href="#" class="nav-home">← Inicio</a>
+      <a href="#page1">Página 1</a>
+      <a href="#page2">Página 2</a>
+      <a href="#page3">Página 3</a>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
