@@ -44,8 +44,9 @@ const PAGE_CONFIG = {
       "https://i.pinimg.com/736x/24/b6/75/24b6757fe3eb70afee7d511a40e4533b.jpg",
       "https://i.pinimg.com/1200x/17/3b/7e/173b7e7f7665e69c627f4953722e3789.jpg",
       "https://i.pinimg.com/736x/38/72/9b/38729bf5b5b8807e1b5a3991408d1fe8.jpg",
-       "https://i.pinimg.com/736x/27/0c/2d/270c2ddb170179cc8e7204e1f93ea867.jpg",
-       "https://i.pinimg.com/736x/d3/0a/db/d30adb0141707ddb97a4ca01b80769f4.jpg"
+      "https://i.pinimg.com/736x/d3/0a/db/d30adb0141707ddb97a4ca01b80769f4.jpg",
+      "https://i.pinimg.com/736x/db/1d/47/db1d474e1d9a563ef9dfdf948ce7f0a7.jpg",
+      
        
     ],
   },
