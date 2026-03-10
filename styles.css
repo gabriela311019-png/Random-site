@@ -101,10 +101,14 @@ h1, h2, h3 { font-family: 'Unbounded', sans-serif; }
 .header {
   position: absolute;
   top: 24px;
-  left: 0; right: 0;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
-  pointer-events: none;
   z-index: 10;
+
+  background-color: rgba(0,0,0,0.75);
+  padding: 20px 30px;
+  border-radius: 10px;
 }
 
 .header h1 {
@@ -272,3 +276,4 @@ h1, h2, h3 { font-family: 'Unbounded', sans-serif; }
   .page-nav a { padding: 6px 10px; font-size: 0.6rem; }
   .home-btn { padding: 12px 24px; font-size: 0.85rem; }
 }
+

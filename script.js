@@ -4,7 +4,7 @@ const PAGE_CONFIG = {
     title: "COMIDA",
     subtitle: "Haz clic en cualquier lugar",
     phrases: [
-      "Quizas siga valiendo vga, pero siento que estoy manejando la situación mejor que antes",
+      "Quizas siga valiendo vrga, pero siento que estoy manejando la situación mejor que antes",
       "Y recuerda...",
       "A veces solo hay que decir Watafak y seguir",
       "Este mes voy a arreglar mi vida, o la voy a empeorar. Ya veremos..",
