@@ -51,7 +51,6 @@ const PAGE_CONFIG = {
     ],
   },
 
-  
   page3: {
     title: "...",
     subtitle: "Haz clic en cualquier lugar",
@@ -60,9 +59,7 @@ const PAGE_CONFIG = {
       "Todo bien, ya llore",
       "Recuerda: si te critican 239,854,202,670 veces, ignoralos, asi como ignoraste los numeros",
       "No dejes que nadie arruine tu día, arruinali tu mismo",
-
-
-      
+ 
     ],
     images: [
       "https://i.pinimg.com/1200x/2c/4b/8a/2c4b8ae4d48d64b90221d49feb85639a.jpg",
@@ -85,6 +82,40 @@ const fondos = [
   "https://i.pinimg.com/736x/85/c7/f2/85c7f2a3a220f2c43728c5c871240110.jpg",
   "https://i.pinimg.com/1200x/61/c3/a5/61c3a57e7d48ac2ae86b4e84d7427cdf.jpg",
 ];
+
+let clickCount = 0;
+const maxClicks = 20;
+let exploded = false;
+
+function explodePage(){
+
+  exploded = true;
+
+  document.body.innerHTML = `
+    <div style="
+      position:fixed;
+      inset:0;
+      background:black;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+    ">
+      <img src="https://i.pinimg.com/originals/d2/ee/a3/d2eea3d794d8385d8523ebab4d3f2e4d.gif" style="max-width:80%;">
+      <h1 style="color:white;font-family:sans-serif;">La página explotó 💥<br>Recarga para empezar otra vez</h1>
+    </div>
+  `;
+}
+document.addEventListener("click", () => {
+
+  if(exploded) return;
+
+  clickCount++;
+
+  if(clickCount >= maxClicks){
+    explodePage();
+  }
+});
 
 // elegir una aleatoria
 const fondoAleatorio = fondos[Math.floor(Math.random() * fondos.length)];
@@ -216,3 +247,5 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("hashchange", router);
+
+
